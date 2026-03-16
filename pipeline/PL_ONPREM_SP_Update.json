@@ -1,0 +1,46 @@
+{
+	"name": "PL_ONPREM_SP_Update",
+	"properties": {
+		"description": "it will update the Database DLclasses , schema spDemo , table- Customers",
+		"activities": [
+			{
+				"name": "SP_Update_Onprem_",
+				"description": "spDemo.Customers table it will update",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[spInsertcustomer]",
+					"storedProcedureParameters": {
+						"CustomerId": {
+							"value": "1002",
+							"type": "Int32"
+						},
+						"FirstName": {
+							"value": "hello",
+							"type": "String"
+						},
+						"LastName": {
+							"value": "vamsi",
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_OnpremSQL",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-03-09T19:32:24Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

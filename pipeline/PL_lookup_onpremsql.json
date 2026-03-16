@@ -1,0 +1,35 @@
+{
+	"name": "PL_lookup_onpremsql",
+	"properties": {
+		"activities": [
+			{
+				"name": "Lookup1_onpremsql",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"sqlReaderQuery": "SELECT TOP 1000 [CustomerId]\n      ,[FirstName]\n      ,[LastName]\n  FROM [DEclasses].[spDemo].[Customers]",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "DSOnpremSQL",
+						"type": "DatasetReference"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-03-16T13:10:20Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

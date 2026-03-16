@@ -1,0 +1,11 @@
+{
+	"name": "LS_AKV_Financeus001",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://KV-financeUS001.vault.azure.net/"
+		}
+	}
+}

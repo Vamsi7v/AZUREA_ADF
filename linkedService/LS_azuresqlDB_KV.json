@@ -1,0 +1,26 @@
+{
+	"name": "LS_azuresqlDB_KV",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "connecting azuredatabase with KV service",
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "azuresqldatabasejarvis.database.windows.net",
+			"database": "azureDBJarvis",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "jarvisadmin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AKV_Financeus001",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "secretjarvisadmin",
+				"secretVersion": "cee1969f6ff04506b372b21b63ec720c"
+			}
+		}
+	}
+}

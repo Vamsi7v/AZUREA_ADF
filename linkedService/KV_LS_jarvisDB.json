@@ -1,0 +1,11 @@
+{
+	"name": "KV_LS_jarvisDB",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://KV-FinanceUS.vault.azure.net/"
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"name": "integrationRT01SQLDB",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
