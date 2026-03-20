@@ -1,0 +1,27 @@
+{
+	"name": "LS_Onprem_ADIENT_001",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "JARVIS2",
+			"database": "ADIENT_001",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "sa",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AKV_ADIENT_001",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "KEY-ADIENT"
+			}
+		},
+		"connectVia": {
+			"referenceName": "integrationRT01SQLDB",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
