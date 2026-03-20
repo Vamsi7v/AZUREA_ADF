@@ -1,0 +1,10 @@
+{
+	"name": "LS_AKV_ADIENT_001",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://KV-financeUS001.vault.azure.net/"
+		}
+	}
+}
