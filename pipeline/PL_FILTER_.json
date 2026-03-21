@@ -57,6 +57,9 @@
 				}
 			}
 		],
+		"folder": {
+			"name": "TEST_PL"
+		},
 		"annotations": [],
 		"lastPublishTime": "2026-03-16T13:42:11Z"
 	},

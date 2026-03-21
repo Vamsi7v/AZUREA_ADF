@@ -145,6 +145,9 @@
 				"type": "String"
 			}
 		},
+		"folder": {
+			"name": "TEST_PL"
+		},
 		"annotations": [],
 		"lastPublishTime": "2026-03-16T11:36:43Z"
 	},

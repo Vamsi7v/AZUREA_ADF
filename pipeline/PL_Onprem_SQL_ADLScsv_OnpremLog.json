@@ -187,6 +187,9 @@
 				"defaultValue": "copylog"
 			}
 		},
+		"folder": {
+			"name": "TEST_PL"
+		},
 		"annotations": [],
 		"lastPublishTime": "2026-03-09T21:12:05Z"
 	},
