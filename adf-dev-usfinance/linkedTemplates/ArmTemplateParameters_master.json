@@ -1,0 +1,105 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-dev-usfinance"
+		},
+		"LS_ADLS_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_ADLS_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_ADLS_PARQUET_06032026_accountKey": {
+			"value": ""
+		},
+		"LS_ADLS_adient001_accountKey": {
+			"value": ""
+		},
+		"LS_BLOB_EXCEL_connectionString": {
+			"value": ""
+		},
+		"LS_OnpremSQL_password": {
+			"value": ""
+		},
+		"LS_PRM_SQLDB_password": {
+			"value": ""
+		},
+		"LS_adls_csv_validation_accountKey": {
+			"value": ""
+		},
+		"LS_vld_csv_pqt_accountKey": {
+			"value": ""
+		},
+		"KV_LS_jarvisDB_properties_typeProperties_baseUrl": {
+			"value": "https://KV-FinanceUS.vault.azure.net/"
+		},
+		"LS_ADLS_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdevusfinance0001.dfs.core.windows.net/"
+		},
+		"LS_ADLS_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevusfinance0001.dfs.core.windows.net"
+		},
+		"LS_ADLS_PARQUET_06032026_properties_typeProperties_url": {
+			"value": "https://adlsdevusfinance0001.dfs.core.windows.net/"
+		},
+		"LS_ADLS_adient001_properties_typeProperties_url": {
+			"value": "https://adlsdevusfinance0001.dfs.core.windows.net"
+		},
+		"LS_AKV_ADIENT_001_properties_typeProperties_baseUrl": {
+			"value": "https://KV-financeUS001.vault.azure.net/"
+		},
+		"LS_AKV_Financeus001_properties_typeProperties_baseUrl": {
+			"value": "https://KV-financeUS001.vault.azure.net/"
+		},
+		"LS_OnpremSQL_properties_typeProperties_server": {
+			"value": "JARVIS2"
+		},
+		"LS_OnpremSQL_properties_typeProperties_database": {
+			"value": "DEclasses"
+		},
+		"LS_OnpremSQL_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"LS_Onprem_ADIENT_001_properties_typeProperties_server": {
+			"value": "JARVIS2"
+		},
+		"LS_Onprem_ADIENT_001_properties_typeProperties_database": {
+			"value": "ADIENT_001"
+		},
+		"LS_Onprem_ADIENT_001_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"LS_PRM_SQLDB_properties_typeProperties_server": {
+			"value": "JARVIS2"
+		},
+		"LS_PRM_SQLDB_properties_typeProperties_database": {
+			"value": "pets"
+		},
+		"LS_PRM_SQLDB_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"LS_adls_csv_validation_properties_typeProperties_url": {
+			"value": "https://adlsdevusfinance0001.dfs.core.windows.net/"
+		},
+		"LS_azuresqlDB_KV_properties_typeProperties_server": {
+			"value": "azuresqldatabasejarvis.database.windows.net"
+		},
+		"LS_azuresqlDB_KV_properties_typeProperties_database": {
+			"value": "azureDBJarvis"
+		},
+		"LS_azuresqlDB_KV_properties_typeProperties_userName": {
+			"value": "jarvisadmin"
+		},
+		"LS_vld_csv_pqt_properties_typeProperties_url": {
+			"value": "https://adlsdevusfinance0001.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
